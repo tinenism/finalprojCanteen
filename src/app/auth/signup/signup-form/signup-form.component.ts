@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup-form',
@@ -17,11 +19,25 @@ export class SignupFormComponent implements OnInit {
   confirmPassword: new FormControl('', [Validators.required])
   });
 
-  constructor() { }
+  constructor(private httpClient:HttpClient, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {}
 
   onSubmit() {
-    console.log(this.signupForm.value)
+    console.log(this.signupForm.value);
+
+    this.httpClient
+    .post(
+      "https://a-l-f-4f566-default-rtdb.firebaseio.com/users.json", 
+      this.signupForm.value
+    )
+    .subscribe((response)=> {
+      console.log(response);
+      this.signupForm.reset();
+      this.router.navigate(["../","login"], {relativeTo: this.activatedRoute});
+    }, error =>{
+      console.log(error)
+    }
+    );
   }
 }
