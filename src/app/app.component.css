@@ -1,0 +1,32 @@
+mat-toolbar{
+    background-color: rgb(48, 41, 41);
+    color: #c59bac;
+    height: 70px;
+    
+}
+mat-sidenav{
+    width: 250px;
+    height: 100%;
+    
+}
+mat-sidenav-content{
+    height: 100vh;
+}
+.title{
+    position: absolute;
+    right: 700px;
+}
+.sbtn{
+    justify-content: center;
+    height:70px;
+    width: 249px;
+    background: #FFF7FA;
+}
+.btn1{
+    position: absolute;
+    right: 100px;
+}
+.btn2{
+    position: absolute;
+    right: 40px;
+}

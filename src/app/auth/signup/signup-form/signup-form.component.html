@@ -1,0 +1,46 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput type="text" formControlName="name">
+            <mat-error>Name is <strong>required!</strong></mat-error>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" autocomplete="email" formControlName="email">
+            <mat-error  *ngIf=
+            "signupForm.get('email')?.hasError('email') && 
+            !signupForm.get('email')?.hasError('required')"
+            >Please enter a valid email address</mat-error>
+
+            <mat-error *ngIf="signupForm.get('email')?.hasError('required')"
+            >Email is <strong>required!</strong></mat-error>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" autocomplete="new-password" formControlName="password">
+
+            <mat-error  *ngIf=
+            "signupForm.get('password')?.hasError('minlength') && 
+            !signupForm.get('password')?.hasError('required')"
+            >Password should be atleast <strong>5 characters</strong></mat-error>
+
+            <mat-error *ngIf="signupForm.get('password')?.hasError('required')"
+            >Password is <strong>required!</strong></mat-error>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Confirm Password</mat-label>
+            <input matInput type="password" formControlName="confirmPassword">
+        </mat-form-field>
+    </p>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!signupForm.valid">Sign Up</button>
+</form>
