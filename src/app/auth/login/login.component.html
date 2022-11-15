@@ -1,0 +1,29 @@
+<div class="container" >
+    <div class="row-mt-3">
+        <div class="col-12 col-lg-4 offset-lg-4">
+            <mat-card class="text-center">
+                <mat-card-header>
+                    <mat-card-title>Login</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)" >
+                        <p>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Email</mat-label>
+                                <input email ngModel matInput required id="email" name="email" type="email" #email="ngModel">
+                            </mat-form-field>   
+                        </p>
+
+                        <p>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input ngModel matInput required id="password" name="password" type="password" autocomplete="new-password" minlength="5">
+                            </mat-form-field>   
+                        </p>
+                        <button type="submit" color="primary" mat-raised-button [disabled]="loginForm.invalid" >Login</button>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>    
+    </div>
+</div>
