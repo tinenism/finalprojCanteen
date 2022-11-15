@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-signup-form',
@@ -19,7 +21,12 @@ export class SignupFormComponent implements OnInit {
   confirmPassword: new FormControl('', [Validators.required])
   });
 
-  constructor(private httpClient:HttpClient, private router: Router, private activatedRoute: ActivatedRoute) { }
+  constructor(
+    private httpClient:HttpClient, 
+    private router: Router, 
+    private matSnackBar: MatSnackBar
+
+    ){}
 
   ngOnInit(): void {}
 
@@ -28,15 +35,29 @@ export class SignupFormComponent implements OnInit {
 
     this.httpClient
     .post(
-      "https://a-l-f-4f566-default-rtdb.firebaseio.com/users.json", 
-      this.signupForm.value
+      `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${environment.firebaseApiKey}`, 
+      {...this.signupForm.value, returnSecureToken: true}
     )
     .subscribe((response)=> {
       console.log(response);
       this.signupForm.reset();
-      this.router.navigate(["../","login"], {relativeTo: this.activatedRoute});
+
+      this.matSnackBar.open("Account Created", "Ok", {
+        verticalPosition:"top",
+        horizontalPosition: "center",
+        
+      })
+      
+      this.router.navigate(['/']);
     }, error =>{
-      console.log(error)
+      let errorMessage ="Signup Failed - " + error.error.error.message;
+
+      this.matSnackBar.open(errorMessage, "Ok", {
+        verticalPosition:"top",
+        horizontalPosition: "center",
+        
+      })
+
     }
     );
   }
