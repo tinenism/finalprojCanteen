@@ -15,14 +15,11 @@ export class LoginComponent implements OnInit {
 
   onLogin(loginForm: NgForm){
     const url = "https://a-l-f-4f566-default-rtdb.firebaseio.com/users.json "
-    
-    this.httpClient.get(url, {params : new HttpParams()
-      .set('orderBy','"email"')
-      .set('equalTo', `"${loginForm.value.email}"`)}
+    console.log(loginForm.value)
+    this.httpClient.get(url,
+     
     ).subscribe(users => {
-      if(users){
-        console.log(users)
-      }
+      console.log(users);
       
     })
   }
