@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
   onLogin(loginForm: NgForm){
     console.log(loginForm.value)
     
+<<<<<<< HEAD
 
     this.httpClient
     .post(
@@ -51,5 +52,35 @@ export class LoginComponent implements OnInit {
     }
     );
   }
+=======
+>>>>>>> 9247181e12dce71119e4d25d4b37a04b9604294c
 
+    this.httpClient
+    .post(
+      `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.firebaseApiKey}`, 
+      {...loginForm.value, returnSecureToken: true}
+    )
+    .subscribe(
+      ()=> {
+
+      this.matSnackBar.open("Login Successful", "Ok", {
+        verticalPosition:"top",
+        horizontalPosition: "center",
+        
+      })
+      
+      this.router.navigate(['/']);
+    }, error =>{
+      let errorMessage ="Login Failed - " + error.error.error.message;
+
+      this.matSnackBar.open(errorMessage, "Ok", {
+        verticalPosition:"top",
+        horizontalPosition: "center",
+        
+      })
+
+    }
+    );
+
+  }
 }
