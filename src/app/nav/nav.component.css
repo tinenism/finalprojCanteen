@@ -20,3 +20,11 @@
   width:200px;
   height: 70px;
 }
+
+.logo{
+  position:absolute;
+  right: 1%;
+width: 60px;
+height: 50px;
+  
+}
