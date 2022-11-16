@@ -52,6 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -59,6 +60,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     NavComponent,
     DashboardComponent,
+    MenuComponent,
     
   ],
   imports: [
