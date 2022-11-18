@@ -3,7 +3,8 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+      
+    <mat-toolbar><img class="img" src="/assets/img/download.jpg" alt=""></mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="auth/login">Login</a>
       <a mat-list-item routerLink="auth/signup">Signup</a>
@@ -11,16 +12,27 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar class="tblr" style="background-color: rgba(100, 149, 237); color:rgb(0, 0, 0)">
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span  routerLink="/" role="button">Canteen</span>
+      <div style="margin:auto; display:table;">
+        <img  routerLink="/" role="button" class="png"src="/assets/img/2nd logo.png" alt="">
+      </div>
+      
+      <div>
+        <span class="about"role="button" routerLink="about">ABOUT US</span>
+      </div>
+
+    <div>
+      <span class="menu" role="button" routerLink="menu">MENU</span>
+    </div>
+
     </mat-toolbar>
     <!-- Add Content Here -->
 
