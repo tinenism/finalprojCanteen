@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
 {
@@ -11,6 +13,12 @@ const routes: Routes = [
 },
 {
 path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule)
+},
+{
+  path: 'about', component: AboutComponent
+},
+{
+  path: 'menu', component: MenuComponent
 }
 ];
 

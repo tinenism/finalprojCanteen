@@ -3,7 +3,11 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 250px;
+}
+
+.tblr{
+ height: 75px;
 }
 
 .sidenav .mat-toolbar {
@@ -14,17 +18,37 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  
 }
 .btn1{
   justify-content: center;
   width:200px;
   height: 70px;
 }
-
-.logo{
-  position:absolute;
+.img{
+  position: relative;
   right: 1%;
-width: 60px;
-height: 50px;
-  
+  width: px;
+  height: 60px;
+}
+.png{
+  width: 90px;
+  height: 55px;
+}
+
+.men{
+  position: absolute;
+  left: 10%;
+}
+.about{
+  position: absolute;
+  font-family: 'Courier New', monospace;
+  font-size: small;
+  right: 38%;
+}
+.menu{
+  position: absolute;
+  font-size: small;
+  font-family: 'Courier New', monospace;
+  right: 56%;
 }

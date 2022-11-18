@@ -53,6 +53,7 @@ import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuComponent } from './menu/menu.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -62,6 +63,7 @@ import { MenuComponent } from './menu/menu.component';
     NavComponent,
     DashboardComponent,
     MenuComponent,
+    AboutComponent,
     
   ],
   imports: [
