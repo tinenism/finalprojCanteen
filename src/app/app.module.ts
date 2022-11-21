@@ -54,6 +54,8 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
+
 
 
 
@@ -64,6 +66,8 @@ import { AboutComponent } from './about/about.component';
     DashboardComponent,
     MenuComponent,
     AboutComponent,
+    AddToCartComponent,
+    
     
   ],
   imports: [
