@@ -57,6 +57,7 @@ import { AboutComponent } from './about/about.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,6 +65,7 @@ import { AboutComponent } from './about/about.component';
     DashboardComponent,
     MenuComponent,
     AboutComponent,
+    
     
   ],
   imports: [
