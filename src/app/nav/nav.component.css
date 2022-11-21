@@ -50,5 +50,11 @@
   position: absolute;
   font-size: small;
   font-family: 'Courier New', monospace;
-  right: 56%;
+  right: 55%;
+}
+.checkout{
+  position: absolute;
+  font-size: small;
+  font-family: 'Courier New', monospace;
+  left: 65%;
 }
