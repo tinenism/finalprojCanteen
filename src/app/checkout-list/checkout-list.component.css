@@ -5,3 +5,13 @@
     background-color:rgba(134, 134, 198, 0.463);
     margin-top: 3%;
 }
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.cart{
+    height: 15%;
+    display: flex;
+    
+}
