@@ -37,7 +37,7 @@ body{
 }
 .wc{
     position: absolute;
-    left: 57%;
+    left: 59%;
     bottom: -18%;
 }
 .desc-section{
@@ -56,4 +56,23 @@ body{
    text-align: center;
    padding-left: 5%;
    padding-right: 5%;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+.section h1{
+    text-align: center;
+    margin-top: 10%;
+}
+.section img{
+   height: 500px;
+   margin-top: 50%;
+   
+
+}
+.par{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
 }

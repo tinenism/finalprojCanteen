@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuComponent } from './menu/menu.component';
-
+import { CheckoutListComponent } from './checkout-list/checkout-list.component';
 const routes: Routes = [
 {
   path: '', component: DashboardComponent
@@ -14,11 +15,18 @@ const routes: Routes = [
 {
 path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule)
 },
+{ 
+  path: 'auth/login/reset', loadChildren: () => import('./auth/reset/reset.module').then(m => m.ResetModule) 
+},
+
 {
   path: 'about', component: AboutComponent
 },
 {
   path: 'menu', component: MenuComponent
+},
+{
+  path: 'checkout-list', component: CheckoutListComponent
 }
 ];
 
