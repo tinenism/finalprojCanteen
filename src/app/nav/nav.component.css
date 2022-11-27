@@ -51,10 +51,7 @@
   font-family: 'Sans Serif', Arial;
   right: 56%;
 }
-  font-family: 'Courier New', monospace;
 
-  right: 55%;
-}
 .checkout{
   position: absolute;
   font-size: small;
@@ -62,8 +59,6 @@
   left: 90%;
 }
 
-  right: 60%;
-}
 
 .out{
   position: inherit;
