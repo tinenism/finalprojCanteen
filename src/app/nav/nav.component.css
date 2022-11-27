@@ -48,6 +48,16 @@
   position: absolute;
   font-size: small;
   font-family: 'Courier New', monospace;
+<<<<<<< HEAD
+  right: 55%;
+}
+.checkout{
+  position: absolute;
+  font-size: small;
+  font-family: 'Courier New', monospace;
+  left: 90%;
+}
+=======
   right: 60%;
 }
 
@@ -60,3 +70,4 @@
   right: 10%;
   
 }
+>>>>>>> 13640b9376fc389419c6ce27600277ecfd61ac0d
