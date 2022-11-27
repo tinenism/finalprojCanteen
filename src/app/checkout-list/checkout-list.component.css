@@ -1,0 +1,39 @@
+
+.container{
+    width: 75%;
+    background-color:rgba(95, 102, 153, 0.479);
+    margin-top: 3%;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.cart{
+    margin-top: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between; 
+}
+.remove{
+    float: right;
+}
+.submit{
+    float: right;
+    overflow: none;
+    margin-top: 540px;
+    margin-right: -70px;
+}
+.breakfast, .lunch, .snacks{
+    padding-top: 5px ;
+    font-weight: 10px;
+}
+.breakfast{
+    color: blue;
+}
+.lunch{
+    color:goldenrod ;
+}
+.snacks{
+    color: brown;
+}
