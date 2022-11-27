@@ -1,51 +1,137 @@
 <div class="container">
-    <div>
-        <span type="button" class="remove">Remove all</span>
-    </div>
-    <div class="submit">
-        <input type="submit" value="submit">
-    </div>
-    <br>
-    <div class="menu">
-        <div class="cart">
-            <div id ="image">
-                <img src ="https://www.honestfoodtalks.com/wp-content/uploads/2021/08/Inkigayo-sandwich-kpop-idol-snack-recipe.jpeg" alt>
-            </div>
-                <div>
-                    <h4>Egg Sandwich</h4>
-                    <input type="number" id="quantity" name="quantity" min="0" max="20" placeholder="asda">
-                    <h4> 15php </h4>
-                </div>
-        </div>
-        <div class="cart">
-            <div id ="image">
-                <img src ="https://www.manilaspoon.com/wp-content/uploads/2012/08/Pansit2.1-500x375.png" alt>
-            </div>
-            <div>
-                <h3>Pansit Bato</h3>
-                <input type="number" id="quantity" name="quantity" min="0" max="20" placeholder="ds">
-                <h4> 12php to 8php</h4>
-            </div>
-        </div>
-    <div class="cart">
-        <div id ="image">
-            <img src ="https://www.inspiredtaste.net/wp-content/uploads/2019/03/Spaghetti-with-Meat-Sauce-Recipe-1-1200.jpg" alt>
-       </div>
-          <div>
-               <h3>Spaghetti</h3>
-               <input type="number" id="quantity" name="quantity" min="0" max="20" placeholder="sdf">
-               <h4> 12php to 8php</h4>
-          </div>
-    </div> 
+    <form action="">
+        <table>
+            <div class="breakfast"><h1>Breakfast</h1></div>
+            <tr>
+                <th style="padding: 20px;" width="20%">Name</th>
+                <th style="padding: 20px;" width="15%">Quantity</th>
+                <th style="padding: 20px;" width="5%">Price</th>
+            </tr>
+
+            <tr>
+                
+                <td style="padding: 20px;"  width="20%">Egg Sandwich</td>
+                <td style="padding: 20px;" width="15%">
+                    <input type="number" style="width: 40px;" max="15" min="0">
+                </td>
+                <td style="padding: 20px;" width="5%">
+                    15php
+                </td>
+            </tr>
+            <tr>
+                
+                <td style="padding: 20px;"  width="20%">Pansit Bato </td>
+                <td style="padding: 20px;" width="15%">
+                    <input type="number" style="width: 40px;" max="15" min="0">
+                </td>
+                <td style="padding: 20px;" width="5%">
+                    <select name="price" id="menu-price">
+                        <option value="none"></option>
+                        <option value="12php">12php</option>
+                        <option value="8php">8php</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                
+                <td style="padding: 20px;"  width="20%">Spaghetti</td>
+                <td style="padding: 20px;" width="15%">
+                    <input type="number" style="width: 40px;" max="15" min="0">
+                </td>
+                <td style="padding: 20px;" width="5%">
+                    12php
+                </td>
+            </tr>
+
+
+            <!---Lunch-->
+            <div class="lunch"><h1>Lunch</h1></div>
+            <tr>
+                <th style="padding: 20px;" width="20%">Name</th>
+                <th style="padding: 20px;" width="15%">Quantity</th>
+                <th style="padding: 20px;" width="5%">Price</th>
+            </tr>
+
+            <tr>
+                
+                <td style="padding: 20px;"  width="20%">Rice</td>
+                <td style="padding: 20px;" width="15%">
+                    <input type="number" style="width: 40px;" max="15" min="0">
+                </td>
+                <td style="padding: 20px;" width="5%">
+                    <select name="price" id="menu-price">
+                        <option value="none"></option>
+                        <option value="12php">12php</option>
+                        <option value="8php">8php</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                
+                <td style="padding: 20px;"  width="20%">Fried Chicken</td>
+                <td style="padding: 20px;" width="15%">
+                    <input type="number" style="width: 40px;" max="15" min="0">
+                </td>
+                <td style="padding: 20px;" width="5%">
+                    55php
+                </td>
+            </tr>
+            <tr>
+                
+                <td style="padding: 20px;"  width="20%">Adobo</td>
+                <td style="padding: 20px;" width="15%">
+                    <input type="number" style="width: 40px;" max="15" min="0">
+                </td>
+                <td style="padding: 20px;" width="5%">
+                    60php
+                </td>
+            </tr>
+
+            <!---Snacks-->
+
+
+            <div class="snacks"><h1>Snacks</h1></div>
+            <tr>
+                <th style="padding: 20px;" width="20%">Name</th>
+                <th style="padding: 20px;" width="15%">Quantity</th>
+                <th style="padding: 20px;" width="5%">Price</th>
+            </tr>
+
+            <tr>
+                
+                <td style="padding: 20px;"  width="20%">Fries</td>
+                <td style="padding: 20px;" width="15%">
+                    <input type="number" style="width: 40px;" max="15" min="0">
+                </td>
+                <td style="padding: 20px;" width="5%">
+                    15php
+                </td>
+            </tr>
+            <tr>
+                
+                <td style="padding: 20px;"  width="20%">Turon</td>
+                <td style="padding: 20px;" width="15%">
+                    <input type="number" style="width: 40px;" max="15" min="0">
+                </td>
+                <td style="padding: 20px;" width="5%">
+                    10php
+                </td>
+            </tr>
+            <tr>
+                
+                <td style="padding: 20px;"  width="20%">Sinapot</td>
+                <td style="padding: 20px;" width="15%">
+                    <input type="number" style="width: 40px;" max="15" min="0">
+                </td>
+                <td style="padding: 20px;" width="5%">
+                    10php
+                </td>
+            </tr>
 
 
 
 
 
-
-
-            
-
-    </div>
-
+        </table>
+    </form>
 </div>

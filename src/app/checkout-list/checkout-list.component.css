@@ -1,8 +1,7 @@
 
 .container{
     width: 75%;
-    height: 80%;
-    background-color:rgba(134, 134, 198, 0.463);
+    background-color:rgba(95, 102, 153, 0.479);
     margin-top: 3%;
 }
 img{
@@ -24,4 +23,17 @@ img{
     overflow: none;
     margin-top: 540px;
     margin-right: -70px;
+}
+.breakfast, .lunch, .snacks{
+    padding-top: 5px ;
+    font-weight: 10px;
+}
+.breakfast{
+    color: blue;
+}
+.lunch{
+    color:goldenrod ;
+}
+.snacks{
+    color: brown;
 }
