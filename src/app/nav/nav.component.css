@@ -42,13 +42,13 @@
 }
 .about{
   position: absolute;
-  font-family: 'Courier New', monospace;
+  font-family: 'Sans Serif', Arial;
   font-size: small;
   right: 38%;
 }
 .menu{
   position: absolute;
   font-size: small;
-  font-family: 'Courier New', monospace;
+  font-family: 'Sans Serif', Arial;
   right: 56%;
 }
