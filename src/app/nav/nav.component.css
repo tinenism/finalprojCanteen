@@ -32,24 +32,23 @@
   height: 60px;
 }
 .png{
+  
   width: 90px;
   height: 55px;
+
 }
 
-.men{
-  position: absolute;
-  left: 10%;
-}
 .about{
   position: absolute;
   font-family: 'Courier New', monospace;
   font-size: small;
-  right: 38%;
+  right: 44%;
 }
 .menu{
   position: absolute;
   font-size: small;
   font-family: 'Courier New', monospace;
+<<<<<<< HEAD
   right: 55%;
 }
 .checkout{
@@ -58,3 +57,17 @@
   font-family: 'Courier New', monospace;
   left: 90%;
 }
+=======
+  right: 60%;
+}
+
+.out{
+  position: inherit;
+  right: 2%;
+}
+.cart{
+  position: inherit;
+  right: 10%;
+  
+}
+>>>>>>> 13640b9376fc389419c6ce27600277ecfd61ac0d

@@ -54,7 +54,11 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
+<<<<<<< HEAD
 import { CheckoutListComponent } from './checkout-list/checkout-list.component';
+=======
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
+>>>>>>> 13640b9376fc389419c6ce27600277ecfd61ac0d
 
 
 
@@ -66,7 +70,11 @@ import { CheckoutListComponent } from './checkout-list/checkout-list.component';
     DashboardComponent,
     MenuComponent,
     AboutComponent,
+<<<<<<< HEAD
     CheckoutListComponent,
+=======
+    AddToCartComponent,
+>>>>>>> 13640b9376fc389419c6ce27600277ecfd61ac0d
     
     
   ],
