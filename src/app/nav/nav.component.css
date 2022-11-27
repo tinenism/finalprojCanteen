@@ -40,15 +40,19 @@
 
 .about{
   position: absolute;
-  font-family: 'Courier New', monospace;
+  font-family: 'Sans Serif', Arial;
   font-size: small;
   right: 44%;
 }
 .menu{
   position: absolute;
   font-size: small;
+
+  font-family: 'Sans Serif', Arial;
+  right: 56%;
+}
   font-family: 'Courier New', monospace;
-<<<<<<< HEAD
+
   right: 55%;
 }
 .checkout{
@@ -57,7 +61,7 @@
   font-family: 'Courier New', monospace;
   left: 90%;
 }
-=======
+
   right: 60%;
 }
 
@@ -70,4 +74,4 @@
   right: 10%;
   
 }
->>>>>>> 13640b9376fc389419c6ce27600277ecfd61ac0d
+
