@@ -15,6 +15,10 @@ const routes: Routes = [
 {
 path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule)
 },
+{ 
+  path: 'auth/login/reset', loadChildren: () => import('./auth/reset/reset.module').then(m => m.ResetModule) 
+},
+
 {
   path: 'about', component: AboutComponent
 },
@@ -22,11 +26,7 @@ path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then
   path: 'menu', component: MenuComponent
 },
 {
-<<<<<<< HEAD
   path: 'checkout-list', component: CheckoutListComponent
-=======
-  path: 'add-to-cart',component: AddToCartComponent
->>>>>>> 13640b9376fc389419c6ce27600277ecfd61ac0d
 }
 ];
 
