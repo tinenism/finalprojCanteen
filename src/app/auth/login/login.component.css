@@ -1,7 +1,12 @@
 .container{
     margin-top: 2%;
+    
 }
 
 .pointer{
     cursor: pointer;
+}
+.text-center{
+    background-color: #62657e6c;
+    
 }
