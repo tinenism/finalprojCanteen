@@ -131,13 +131,21 @@ a:hover{
     width: 100%;
 }
 
-.h1{
+h1{
     color: black;
     text-align: center;
     font-family: Georgia, Times, "Times New Roman", serif;
     padding-top: 30px;
     font-size: 40px;
 }
+h2{
+    border-top: 1px solid #2b2b32;
+}
+p{
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+ }
 .about{
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 17px;
