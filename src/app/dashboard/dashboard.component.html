@@ -1,72 +1,44 @@
-<div class="main-content"  data-aos="fade-down"
-data-aos-easing="linear"
-data-aos-duration="1500" 
->   
+<div>
+    <img class="img" src="/assets/img/My.jpg" alt="">
+</div>
 
+<div class="about">
+    <h1 class="h1">About DWCL</h1>
+    <br>
+ <p class="p">The Divine Word College of Legazpi (DWCL) sprang into existence from a small school, Liceo de Albay (LDA), 
+    a diocesan school of Caceresfor boys. In 1947 the LDA was entrusted to Fr. Juan Carullo, a retiredarmy chaplain. 
+    The members of the Board of Trustees were then Msgr. Justiniano Romano, Fr. Euferto Alberto, Fr. Alfonso Molina, 
+    Fr. Guilermo Rejante, Fr. William Rehente and Fr. RusticoBurce. 
+    The school building was located at Corners Rizal St. and Maria Clara St. (now Fr. Joseph L. Bates St.),Legazpi City. 
+    The lot was donated by the Calleja family of Legazpi City.
+   In 1952, the LDA was ravaged by Typhoon Trix. Financial incapacity became a major problem for its survival. 
+   To save the school from possible closure, series of negotiations to take over the management of the school were done between the then Bishop of Legazpi, 
+   Bishop Flaviano B. Ariola, D.D. and the SocietasVerbiDivini (SVD) Congregation. Both agreed andofficially turned over the Liceo de Albay by 
+   Bishop Flaviano B. Ariola, D.D. to the Provincial Superior of SVD, Fr. Alfonse Lesage, SVDin 1961.The Society of the Divine Word 
+   appointed Fr. Joseph L. Bates, SVD, to officially administer the school withMsgr. Honesto A. Moraleda, a diocesan clergy, as Principal. 
+   The new school kept its exclusivity for the education of boys with the help
+    of Msgr. Nestor C. Cariño and the then Frt. Florante Camacho, SVD as Regent.</p>
+    <br>
+</div>
+<input type="checkbox" id="show">
+    <label for="show" class="show-btn">Book a table</label>
 
-
-  <div class="sections">
-
-    <section id="homepage" class="homepage">
-  
-  <div id="slides" class="cover-slides">
-      <ul class="slides-container">
-      
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-  
-             
-                <h1 class="m-b-20"><strong>Welcome To <br><br> DWCL Canteen</strong></h1>
-                <p class="wc">The Divine Word College of Legazpi Canteen <br>
-                is open for reservation</p>
-               
-             
-              </div>
-            </div>
-          </div>
-
-        </ul>
+    <div class="container">
+        <label for="show" class="close-btn" title="close">×</label>
+        <h1>Welcome</h1>
+        <form [formGroup]="dashForm" (ngSubmit)="onSubmit()">
+            <label>Your full name?</label>
+            <input type="text" formControlName="name">
+            <label>Student no.</label>
+            <input type="text" formControlName="studentNo">
+            <label for="meeting-time">Choose a time for your appointment:</label>
+            <input type="datetime-local" id="dateTime" name="dateTime" formControlName="dateTime" >
+            <label for="quantity">Quantity (max of 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" formControlName="quantity">
+            <button type="submit">Submit</button>
+        </form>
+        <div>
         </div>
-        </section>
+    </div>
 
-
-        <section id="desc" class="desc">
-          <div class="container container-1">
-             
-                 <div class="desc-section">
-                       <h1 class="h1">About DWCL</h1>
-             <br>
-          <p class="p">The Divine Word College of Legazpi (DWCL) sprang into existence from a small school, Liceo de Albay (LDA), a diocesan school of Caceresfor boys. In 1947 the LDA was entrusted to Fr. Juan Carullo, a retiredarmy chaplain. The members of the Board of Trustees were then Msgr. Justiniano Romano, Fr. Euferto Alberto, Fr. Alfonso Molina, Fr. Guilermo Rejante, Fr. William Rehente and Fr. RusticoBurce. The school building was located at Corners Rizal St. and Maria Clara St. (now Fr. Joseph L. Bates St.),Legazpi City. The lot was donated by the Calleja family of Legazpi City.
-            In 1952, the LDA was ravaged by Typhoon Trix. Financial incapacity became a major problem for its survival. To save the school from possible closure, series of negotiations to take over the management of the school were done between the then Bishop of Legazpi, Bishop Flaviano B. Ariola, D.D. and the SocietasVerbiDivini (SVD) Congregation. Both agreed andofficially turned over the Liceo de Albay by Bishop Flaviano B. Ariola, D.D. to the Provincial Superior of SVD, Fr. Alfonse Lesage, SVDin 1961.The Society of the Divine Word appointed Fr. Joseph L. Bates, SVD, to officially administer the school withMsgr. Honesto A. Moraleda, a diocesan clergy, as Principal. The new school kept its exclusivity for the education of boys with the help
-             of Msgr. Nestor C. Cariño and the then Frt. Florante Camacho, SVD as Regent.</p>
-
-             <br>
-          </div>
-
-     
-          <div class="section">
-            <div class="text">
-          <h1> A Message From The President</h1>
-        
-          <p class="par">Welcome to Divine Word College of Legazpi. It matters to us that you know who we are and why this institution exists and will continue to exist.</p>
-
-            <p class="par">The raison d’être of Divine Word College of Legazpi reflects the vision of Saint Arnold Janssen, the founder of the religious-missionary congregation – the Society of the Divine Word (SVD). Education is among the missionary apostolates of the Society. Our Founder, a secondary school teacher himself teaching natural sciences and mathematics, understood the importance of education as a method for evangelization, and as an effective way of missionary service. He impressed upon his missionaries that an integral approach in education is critical in the faith-formation of the person. To this day, we continue to live his vision and ensure that integral formation of the human person takes place in our schools. Our aim is to inform and mold individuals into “persons of the Word”, hearers and doers of the Word – in the language of the Divine Word Educational Association, "witnesses to the Word in the world".</p>
-          
-            <p class="par">To honor this commitment, here at Divine Word College of Legazpi, we value excellence, service, and professionalism. We also ascribe to the values of justice, peace and integrity of creation as an acknowledgment of our common origin as created beings, and our interrelatedness with one another through mutual respect and co-responsibility – hence, our being a family. These values are at the core of our day-to-day undertaking – a way of life, a pledge we honor and desire to render to our students and other stakeholders.
-
-              I invite you then to learn more about us. As you move through the pages of our website you will discover that our academic programs are designed to provide life skills and competencies that enable our young people to navigate confidently in the constantly changing milieu of the 21st century. Our commitment to academic excellence and holistic development nurtured in a healthy organizational environment and permeated with a missionary paradigm, our sense of corporate social responsibility and best practices in community involvement are meant to prepare our young to succeed in life as competent professionals with a Christian missionary character – ready for the world.</p>
-          
-              <p class="par">I wish you to be part of our family here at Divine Word College of Legazpi. We are here to serve. We give you our word.</p>
-          
-          <p class="par">In the Divine Word,</p>
-          <p class="par">REV. FR. NIELO M. CANTILADO, SVD
-            <br>
-            DWCL President</p>
-            </div>
-
-          <div>
-            
-<img src="https://www.dwc-legazpi.edu/static/media/president.8c59a719.jpg" alt="">
-          </div>
-        </div>
+  

@@ -42,7 +42,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -67,6 +67,7 @@ import { CheckoutListComponent } from './checkout-list/checkout-list.component';
     MenuComponent,
     AboutComponent,
     CheckoutListComponent,
+    
     
     
   ],
@@ -112,7 +113,9 @@ import { CheckoutListComponent } from './checkout-list/checkout-list.component';
     MatTableModule,
     FormsModule,
     HttpClientModule,
-    LayoutModule
+    LayoutModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
