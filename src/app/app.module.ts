@@ -55,6 +55,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
+import { ReservationComponent } from './reservation/reservation.component';
 
 
 
@@ -67,6 +68,7 @@ import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
     MenuComponent,
     AboutComponent,
     AddToCartComponent,
+    ReservationComponent,
     
     
   ],
