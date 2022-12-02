@@ -1,17 +1,120 @@
 .sec1{
-    margin-top: 5%;
-  }
-  .sec2{
-    margin-top: 5%;
-  }
-  .sec4{
-    margin-top: 5%;
-  }
- 
+  margin-top: 5%;
+}
+.sec2{
+  margin-top: 5%;
+}
+.sec4{
+  margin-top: 5%;
+}
+.para{
+  text-align: justify;
+
+}
+.staff3{
+  height: 150px;
+  width: 150px;
+  margin-left: 39%;
+  border-radius:50%;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  -moz-box-shadow: 10px 10px 5px #adaaaa;
+  -webkit-box-shadow: 10px 10px 5px #adaaaa;
+  box-shadow: 10px 10px 5px #adaaaa;
+}
+.cs{
+  padding-top:3%;
+  margin-left:48%;
+  font-weight: bold;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+}
+.cs1{
+  margin-left:43%;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  
+}
+
+.staff2{
+  height: 150px;
+  width: 150px;
+  margin-left: 30%;
+  border-radius:50%;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  -moz-box-shadow: 10px 10px 5px #adaaaa;
+  -webkit-box-shadow: 10px 10px 5px #adaaaa;
+  box-shadow: 10px 10px 5px #adaaaa;
+}
+.css{
+  padding-top:3%;
+  margin-left:36%;
+  font-weight: bold;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+}
+.cs2{
+  margin-left:47%;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  
+}
+.staff1{
+  height: 150px;
+  width: 150px;
+  margin-left: 25%;
+   border-radius:50%;
+   position: relative;
+   animation-name: myanimation;
+   animation-duration: 4s;
+   -moz-box-shadow: 10px 10px 5px #adaaaa;
+  -webkit-box-shadow: 10px 10px 5px #adaaaa;
+  box-shadow: 10px 10px 5px #adaaaa;
+}
+.csss{
+  padding-top:3%;
+  margin-left:39%;
+  font-weight: bold;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+}
+.cs3{
+  margin-left:45%;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  
+}
+
+h4{
+  font-weight: bold;
+}
+footer{
+  background-color: lightgray;
+}
+.aboutss{
+  padding-top: 2%;
+}
+
+@keyframes myanimation{
+  0% {left: 0px; top: 0px}
+  25% {left: 300px; top: 0px}
+  50% {left: 300px; top: 50px}
+  100% {left: 0px; top: 0px}
+}
+@media only screen and (max-width:1000px){
   .staff3{
     height: 150px;
     width: 150px;
-    margin-left: 26%;
+    margin-left: 45%;
     border-radius:50%;
     position: relative;
     animation-name: myanimation;
@@ -19,24 +122,23 @@
   }
   .cs{
     padding-top:1%;
-    margin-left:36%;
+    margin-left:60%;
     font-weight: bold;
     position: relative;
     animation-name: myanimation;
     animation-duration: 4s;
   }
   .cs1{
-    margin-left:31%;
+    margin-left:65%;
     position: relative;
     animation-name: myanimation;
     animation-duration: 4s;
-    
   }
-  
+
   .staff2{
     height: 150px;
     width: 150px;
-    margin-left: 25%;
+    margin-left: 30%;
     border-radius:50%;
     position: relative;
     animation-name: myanimation;
@@ -44,19 +146,19 @@
   }
   .css{
     padding-top:1%;
-    margin-left:32%;
+    margin-left:36%;
     font-weight: bold;
     position: relative;
     animation-name: myanimation;
     animation-duration: 4s;
   }
   .cs2{
-    margin-left:43%;
+    margin-left:55%;
     position: relative;
     animation-name: myanimation;
     animation-duration: 4s;
-    
   }
+
   .staff1{
     height: 150px;
     width: 150px;
@@ -68,33 +170,321 @@
   }
   .csss{
     padding-top:1%;
-    margin-left:39%;
+    margin-left:41%;
     font-weight: bold;
     position: relative;
     animation-name: myanimation;
     animation-duration: 4s;
   }
   .cs3{
-    margin-left:45%;
+    margin-left:50%;
     position: relative;
     animation-name: myanimation;
     animation-duration: 4s;
     
   }
-  
-  h4{
+}
+
+@media only screen and (max-width:800px){
+  .staff3{
+    height: 150px;
+    width: 150px;
+    margin-left: 40%;
+    border-radius:50%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs{
+    padding-top:1%;
+    margin-left:45%;
     font-weight: bold;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
   }
-  footer{
-    background-color: lightgray;
-  }
-  .aboutss{
-    padding-top: 2%;
+  .cs1{
+    margin-left:42.5%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
   }
 
-  @keyframes myanimation{
-    0% {left: 0px; top: 0px}
-    25% {left: 300px; top: 0px}
-    50% {left: 300px; top: 50px}
-    100% {left: 0px; top: 0px}
+  .staff2{
+    height: 150px;
+    width: 150px;
+    margin-left: 41%;
+    border-radius:50%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
   }
+  .css{
+    padding-top:1%;
+    margin-left:43.5%;
+    font-weight: bold;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs2{
+    margin-left:49%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+
+  .staff1{
+    height: 150px;
+    width: 150px;
+    margin-left: 41%;
+     border-radius:50%;
+     position: relative;
+     animation-name: myanimation;
+     animation-duration: 4s;
+  }
+  .csss{
+    padding-top:1%;
+    margin-left:46%;
+    font-weight: bold;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs3{
+    margin-left:49%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    
+  }
+}
+
+@media only screen and (max-width:916px){
+  .staff3{
+    height: 150px;
+    width: 150px;
+    margin-left: 39%;
+    border-radius:50%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs{
+    padding-top:1%;
+    margin-left:43.7%;
+    font-weight: bold;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs1{
+    margin-left:41%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+
+  .staff2{
+    height: 150px;
+    width: 150px;
+    margin-left: 39%;
+    border-radius:50%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .css{
+    padding-top:1%;
+    margin-left:42%;
+    font-weight: bold;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs2{
+    margin-left:47.7%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+
+  .staff1{
+    height: 150px;
+    width: 150px;
+    margin-left: 39%;
+     border-radius:50%;
+     position: relative;
+     animation-name: myanimation;
+     animation-duration: 4s;
+  }
+  .csss{
+    padding-top:1%;
+    margin-left:44%;
+    font-weight: bold;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs3{
+    margin-left:46.7%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    
+  }
+}
+
+@media only screen and (max-width:500px){
+  .staff3{
+    height: 150px;
+    width: 150px;
+    margin-left: 35%;
+    border-radius:50%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs{
+    padding-top:1%;
+    margin-left:42.4%;
+    font-weight: bold;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs1{
+    margin-left:39%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+
+  .staff2{
+    height: 150px;
+    width: 150px;
+    margin-left: 35%;
+    border-radius:50%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .css{
+    padding-top:1%;
+    margin-left:39%;
+    font-weight: bold;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs2{
+    margin-left:48%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+
+  .staff1{
+    height: 150px;
+    width: 150px;
+    margin-left: 35%;
+     border-radius:50%;
+     position: relative;
+     animation-name: myanimation;
+     animation-duration: 4s;
+  }
+  .csss{
+    padding-top:1%;
+    margin-left:42.5%;
+    font-weight: bold;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+  }
+  .cs3{
+    margin-left:46.7%;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    
+  }
+}
+.para:before{
+  content:'';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width:0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+}
+.para:hover:before{
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate{
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color:#7b7f9c;
+    border-right-color:#7b7f9c;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color:#7b7f9c;
+    border-right-color:#7b7f9c;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+
+.para:after{
+  content:'';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width:0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+}
+.para:hover:after{
+  animation: animate2 1s linear forwards;
+}
+
+@keyframes animate2{
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color: transparent;
+    border-left-color: #7b7f9c;
+  }
+  
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #7b7f9c;
+    border-left-color: #7b7f9c;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color: #7b7f9c;
+    border-left-color:#7b7f9c;
+
+  }
+}
+

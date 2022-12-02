@@ -1,49 +1,61 @@
-#menu{
-	padding: 25px 0 25px 0;
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-#section{
-	padding: 25px 0 25px 0;
-	text-align: center;
-	font-size: 6em;
+body{
+	background-color: rgba(87, 115, 240, 0.215) ;
+	font-family : 'Poppins', sans-serif;
+	overflow-x: hidden;
 }
 .menu{
-	font-family: Arial, Helvetica, sans-serif;
-}
-#menu_row{
+	
+	padding:0 10px 30px 10px;
 	display: flex;
-	padding: 0 100px 0 100px;
+	grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+	grid-gap: 20px 40px;
 }
-#menu_col{
-	box-shadow: 2px 2px 2px #bbb;
-	border: 2px solid #bbb;
-	background-color: #fff;
-	margin: 7px;
-  flex: 1;
-}
-#menu_col h2{
-	background-color: rgb(14, 36, 238);
-	color: rgb(18, 18, 19);
+.heading{
+	color : black;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	grid-column: 1/1;
 	text-align: center;
-	padding: 5px
-}
-#image{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	padding: 5px;
-	border: 2px solid ridge;
 
 }
-#image img {
-	width: 130px;
-	height: 130px;
-	border-radius: 50%;
-	object-fit: cover;
+.img{
+	height: 120px;
+	width: 120px;
 }
-.box{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+.food-items
+.heading>h1{
+	font-weight: 400;
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-right: 10em;
+}
+.heading>h3{
+	font-weight: 600;
+	font-size: 22px;
+	letter-spacing: 5px;
+}
+
+h1{
+	grid-column: 1/-1;
 	text-align: center;
-	margin: 5px;
+}
+.content{
+
+	width: 100%;
+}
+@media (max-width: 500px){
+	.food-items{
+		scale: 2/1;
+	}
+}
+.menu{
+	text-align: center;
+	padding-left: 45em;
+	padding-left: 45em;
 }
