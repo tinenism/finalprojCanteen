@@ -55,6 +55,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { CheckoutListComponent } from './checkout-list/checkout-list.component';
+import { BreakfastComponent } from './menu/breakfast/breakfast.component';
+import { SnacksComponent } from './menu/snacks/snacks.component';
 
 
 
@@ -67,6 +69,8 @@ import { CheckoutListComponent } from './checkout-list/checkout-list.component';
     MenuComponent,
     AboutComponent,
     CheckoutListComponent,
+    BreakfastComponent,
+    SnacksComponent
     
     
     
