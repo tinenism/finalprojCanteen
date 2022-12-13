@@ -1,9 +1,25 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
+import { HotToastService } from '@ngneat/hot-toast';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 import { environment } from 'src/environments/environment';
+
+export function passwordsMatchValidator(): ValidatorFn{
+  return(control: AbstractControl): ValidationErrors | null => {
+    const password =control.get('password')?.value;
+    const confirmPassword = control.get('confirmPassword')?.value;
+    
+    if(password && confirmPassword && password !== confirmPassword){
+      return{
+        passwordDontMatch: true
+      }
+    }
+    return null;
+  };
+}
 
 @Component({
   selector: 'app-signup-form',
@@ -24,42 +40,41 @@ export class SignupFormComponent implements OnInit {
   constructor(
     private httpClient:HttpClient, 
     private router: Router, 
-    private matSnackBar: MatSnackBar
+    private matSnackBar: MatSnackBar,
+    private authService: AuthenticationService,
+    private toast: HotToastService,
 
     ){}
 
   ngOnInit(): void {}
 
-  onSubmit() {
-    console.log(this.signupForm.value);
+  get name() {
+    return this.signupForm.get('name');
+  }
+  
+  get email() {
+    return this.signupForm.get('email');
+  }
 
-    this.httpClient
-    .post(
-      `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${environment.firebaseApiKey}`, 
-      {...this.signupForm.value, returnSecureToken: true}
-    )
-    .subscribe((response)=> {
-      console.log(response);
-      this.signupForm.reset();
+  get password() {
+    return this.signupForm.get('password');
+  }
 
-      this.matSnackBar.open("Account Created", "Ok", {
-        verticalPosition:"top",
-        horizontalPosition: "center",
-        
+  get confirmPassword() {
+    return this.signupForm.get('confirmPassword');
+  }
+  onSubmit(){
+    if(!this.signupForm.valid) return;
+
+    const {name, email, password } = this.signupForm.value;
+    this.authService.signUp(name,email,password).pipe(
+      this.toast.observe({
+        success: 'Congrats! You are all signed up',
+        loading: 'Signing in',
+        error:({message}) => `${message}`
       })
-      
-      this.router.navigate(['/auth/login']);
-      
-    }, error =>{
-      let errorMessage ="Signup Failed - " + error.error.error.message;
-
-      this.matSnackBar.open(errorMessage, "Ok", {
-        verticalPosition:"top",
-        horizontalPosition: "center",
-        
-      })
-
-    }
-    );
+    ).subscribe(() => {
+      this.router.navigate(['/'])
+    })
   }
 }

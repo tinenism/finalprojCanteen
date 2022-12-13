@@ -1,5 +1,5 @@
 
-  	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" placeholder="sda"/>
   	<label for="menu-icon"></label>
   	<nav class="nav"> 		
   		<ul class="pt-5">
@@ -19,17 +19,29 @@
       <div class="logo" target="_blank">
         <img  routerLink="/" role="button" src="/assets/img/Divine canteen reservation-logos_white.png" alt="">
       </div>
-    <div>
-      <span class="checkout" role="button" routerLink="checkout-list">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-        </svg>
-      </span>
-    </div> 
+      <ng-container  *ngIf="authService.currentUser$ | async as user; else loginButton">
+        <button class="k" mat-button [matMenuTriggerFor]="userMenu">
+          <mat-icon>account_circle</mat-icon>
+            {{user.displayName}}
+          <mat-icon>expand_more</mat-icon>
+        </button>
 
+      </ng-container>
+      <ng-template #loginButton>
+        <button class="k" mat-button routerLink="auth/login">
+          <mat-icon>login</mat-icon>
+          Login
+        </button>
+      </ng-template>
     </mat-toolbar>
     <!-- Add Content Here -->
 
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+<mat-menu #userMenu="matMenu">
+  <button mat-menu-item (click)="logout()">
+    Logout
+  </button>
+</mat-menu>

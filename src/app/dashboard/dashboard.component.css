@@ -14,14 +14,16 @@ body{
     background: #62657e6c;
     border: 2px solid ridge;
     border-radius: 10%;
+    
 }
 
 .show-btn{
     position: absolute;
     top: 7%;
-    left: 79%;
+    left: 20%;
     border: 2px solid ridge;
     border-radius: 10%;
+
 }
 
 input[type="checkbox"]{
@@ -44,8 +46,8 @@ input[type="checkbox"]{
 }
 .container{
     position: absolute;
-    top: 39%;
-    left: 80%;
+    top: 55%;
+    left: 35%;
     transform: translate(-50%, -50%)
 }
 .container .close-btn{
@@ -152,5 +154,4 @@ p{
     margin-left: 5%;
     margin-right: 5%;
 }
-
 

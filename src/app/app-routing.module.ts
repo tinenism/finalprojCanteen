@@ -4,15 +4,24 @@ import { AboutComponent } from './about/about.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuComponent } from './menu/menu.component';
 import { CheckoutListComponent } from './checkout-list/checkout-list.component';
+import {canActivate , redirectLoggedInTo, redirectUnauthorizedTo} from '@angular/fire/auth-guard'
+
+const redirectLogin = () => redirectUnauthorizedTo(['auth/login']);
+const redirectHome = () => redirectUnauthorizedTo ([''])
+
 const routes: Routes = [
 {
-  path: '', component: DashboardComponent
+  path: '', component: DashboardComponent,
+
+
 },
 { 
-  path: 'auth/signup', loadChildren: () => import('./auth/signup/signup.module').then(m => m.SignupModule) 
+  path: 'auth/signup', loadChildren: () => import('./auth/signup/signup.module').then(m => m.SignupModule),
+
 },
 {
-path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule)
+path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule),
+
 },
 { 
   path: 'auth/login/reset', loadChildren: () => import('./auth/reset/reset.module').then(m => m.ResetModule) 
