@@ -55,6 +55,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { CheckoutListComponent } from './checkout-list/checkout-list.component';
+
+import { BreakfastComponent } from './menu/breakfast/breakfast.component';
+import { SnacksComponent } from './menu/snacks/snacks.component';
+
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
@@ -79,6 +83,8 @@ import { HotToastModule } from '@ngneat/hot-toast';
     MenuComponent,
     AboutComponent,
     CheckoutListComponent,
+    BreakfastComponent,
+    SnacksComponent
     
     
     
