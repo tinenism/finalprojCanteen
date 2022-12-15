@@ -21,25 +21,8 @@
     of Msgr. Nestor C. Cariño and the then Frt. Florante Camacho, SVD as Regent.</p>
     <br>
 </div>
-<input type="checkbox" id="show" class="btn2">
-    <label for="show" class="show-btn">Book a table</label>
 
-    <div class="container">
-        <label for="show" class="close-btn" title="close">×</label>
-        <h1>Welcome</h1>
-        <form [formGroup]="dashForm" (ngSubmit)="onSubmit()">
-            <label>Your full name?</label>
-            <input type="text" formControlName="name">
-            <label>Student no.</label>
-            <input type="text" formControlName="studentNo">
-            <label for="meeting-time">Choose a time for your appointment:</label>
-            <input type="datetime-local" id="dateTime" name="dateTime" formControlName="dateTime" >
-            <label for="quantity">Quantity (max of 5):</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="5" formControlName="quantity">
-            <button type="submit">Submit</button>
-        </form>
-        <div>
-        </div>
-    </div>
+
+
 
   

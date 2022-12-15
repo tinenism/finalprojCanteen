@@ -1,0 +1,68 @@
+<div>
+    <img class="img" src="/assets/img/My.jpg" alt="">
+</div>
+
+<input type="checkbox" id="show" class="btn2">
+<label for="show" class="show-btn">Book a table</label>
+
+<div class="container">
+    <label for="show" class="close-btn" title="close">×</label>
+    <h1>Welcome</h1>
+    <form #bookingsForm="ngForm" (ngSubmit)="onSubmit(bookingsForm.value)">
+        <label>Your full name?</label>
+        <input type="text" name="name" ngModel>
+        <label>Student no.</label>
+        <input type="text" name="studentNo" ngModel>
+        <label for="meeting-time">Choose a time for your appointment:</label>
+        <input type="datetime-local" id="dateTime" name="dateTime" ngModel >
+        <label for="quantity">Quantity (max of 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" ngModel>
+        <input class="btnform" type="submit" value="{{editMode ? 'Update' : 'Submit'}}">
+    </form>
+    <div>
+    </div>
+</div>
+
+
+<div>
+    <div>
+        <div class="booking-display-area">
+            <h3>Reservation List</h3>
+            <table class="table table-stripped "id="bookings">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Student No.</th>
+                    <th>Date & Time</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr *ngIf="allBooking.length < 1 && !isFetching"  style="text-align: center">
+                    <td colspan="5">
+                        No Booking Available!
+                    </td>
+                </tr>
+                <tr *ngIf="isFetching"  style="text-align: center">
+                    <td colspan="5">
+                        Loading....
+                    </td>
+                </tr>
+                <tr *ngFor="let book of allBooking; index as i">
+                    <td>{{i + 1}}</td>
+                    <td>{{book.name}}</td>
+                    <td>{{book.studentNo}}</td>
+                    <td>{{book.dateTime}}</td>
+                    <td>{{book.quantity}}</td>
+                    <td><button mat-button (click)="onDeleteBooking(book.id)">Delete</button></td>
+                    <td><button mat-button (click)="onEdit(book.id)" >Edit</button></td>
+                </tr>
+            </table>
+            <div>
+            <button class="btnfetch" mat-button (click)="onBookingFetch()">Fetch Booking </button>
+            <button class="btnclear" mat-button (click)="onClear()">Clear</button> 
+            </div>
+            <div>
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+</div>

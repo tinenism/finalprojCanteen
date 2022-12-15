@@ -71,6 +71,9 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { HotToastModule } from '@ngneat/hot-toast';
+import { ProfileComponent } from './profile/profile.component';
+import { ReservationComponent } from './reservation/reservation.component';
+
 
 
 
@@ -84,7 +87,10 @@ import { HotToastModule } from '@ngneat/hot-toast';
     AboutComponent,
     CheckoutListComponent,
     BreakfastComponent,
-    SnacksComponent
+    SnacksComponent,
+    ProfileComponent,
+    ReservationComponent,
+    
     
     
     
