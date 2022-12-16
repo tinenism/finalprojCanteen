@@ -8,18 +8,18 @@
                     <img  mat-card-avatar src="/assets/img/download.jpg" alt="">
                 </mat-card-header>
                 <mat-card-content>
-                    <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)" >
+                    <form [formGroup]="loginForm" (ngSubmit)="submit()" >
                         <p>
                             <mat-form-field appearance="outline">
                                 <mat-label>Email</mat-label>
-                                <input email ngModel matInput required id="email" name="email" type="email" #email="ngModel">
+                                <input formControlName="email" matInput required id="email" name="email" type="email" >
                             </mat-form-field>   
                         </p>
 
                         <p>
                             <mat-form-field appearance="outline">
                                 <mat-label>Password</mat-label>
-                                <input ngModel matInput required id="password" name="password" type="password" autocomplete="new-password" minlength="5">
+                                <input formControlName="password" matInput required id="password" name="password" type="password" autocomplete="new-password" minlength="5">
 
                                 <mat-hint align="end" class="pointer text-primary" routerLink="reset" >Forgot Password?</mat-hint>
                             </mat-form-field>   

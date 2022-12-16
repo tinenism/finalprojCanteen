@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-nav',
@@ -15,7 +17,12 @@ export class NavComponent {
       map(result => result.matches),
       shareReplay()
     );
-
-  constructor(private breakpointObserver: BreakpointObserver) {}
+    user$ = this.authService.currentUser$
+    constructor(private breakpointObserver: BreakpointObserver, public authService: AuthenticationService, private router: Router) {}
+    logout(){
+      this.authService.logout().subscribe(() =>{
+        this.router.navigate(['auth/login'])
+      });
+    }
 
 }

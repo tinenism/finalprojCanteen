@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "a-l-f-4f566": {
+      "hosting": {
+        "b": [
+          "a-l-f-4f566"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "a-l-f-4f566"
+  }
+}

@@ -141,26 +141,37 @@ h1{
     font-size: 40px;
 }
 h2{
-    border-top: 1px solid #2b2b32;
+    border-bottom: 1px solid #2b2b32;
+    
 }
 p{
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
  }
-.about{
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 17px;
-    margin-left: 5%;
-    margin-right: 5%;
-}
 .p{
     text-align: justify;
 }
 
-.btnfetch{
-    margin-bottom: 5%;
+.btnclear{
+    float: right;
+    right: 65%;
     width: 15%;
     height: 15%;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btnfetch{
+    float: left;
+    left:3%;
+    width: 15%;
+    height: 15%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btnform{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+.btnform:active{
+
+    background-color: rgb(24, 24, 22);
+        
 }
